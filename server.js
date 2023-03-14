@@ -1,10 +1,14 @@
 const express = require('express')
 const { FieldValue } = require('firebase-admin/firestore')
 const app = express()
-const port = 8383
+const port = 8384
 const { db } = require('./firebase.js')
 
 app.use(express.json())
+
+app.get('/', (req, res) => {
+    res.send('Hi!, I am Online!!!');
+});
 
 app.get('/power-switch', async (req, res) => {
     const peopleRef = db.collection('switches').doc('power-switch')
