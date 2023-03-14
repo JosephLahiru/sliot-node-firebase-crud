@@ -1,0 +1,15 @@
+### ADD A ENTRY
+POST http://localhost:8383/addentry
+Content-Type: application/json
+//{ DayMaxVoltage, DayMinVoltage, DayTotRealPower, DaytotapparentPower, SupplyID, date, elecAccNumber, time }
+
+{
+    "DayMaxVoltage": "240",
+    "DayMinVoltage": 212,
+    "DayTotRealPower": "12",
+    "DaytotapparentPower": "14",
+    "SupplyID": "1",
+    "date": "11-10-2022",
+    "elecAccNumber": "0304360609",
+    "time": "22:22:10"
+}
